@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kenalan</title>
+</head>
+<body style="margin-left: 20px">
+	<img src="https://giffiles.alphacoders.com/209/209655.gif" style="width: 60%; margin-left: 20px">
+	<h1 style="font-size: 60px; margin-left: 20px">Kenalan Yuk!</h1>
+
+	<button id='btn_mau' style="font-size: 40px; margin-left: 20px"><a href="kenal.html">Ayok</a></button>&nbsp;
+    <button id='btn_gamau' onclick='gamau(this)' style='position:absolute; font-size: 40px; margin-left: 20px'>Gamau</button>
+    
+
+
+
+</body>
+	<script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*500)+1;
+            var j = Math.floor(Math.random()*300)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+
+</html>
